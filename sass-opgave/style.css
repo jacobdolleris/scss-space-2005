@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin-left: 5px; }
+
+/* ADVARSEL! 2005 SPACE THEME INCOMING */
+body {
+  background-image: url(images/baggrund.jpg);
+  background-size: cover; }
+
+h1, h2, h3, h4, p, .kasse .content {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px; }
+
+h3 {
+  text-align: center; }
+
+.menu, .footer {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .menu li, .footer li {
+    display: inline; }
+    .menu li a, .footer li a {
+      font-family: Helvetica, sans-serif;
+      text-decoration: none;
+      color: white;
+      margin-right: 15px; }
+      .menu li a:hover, .footer li a:hover {
+        color: gray; }
+
+.aktiv {
+  font-style: italic; }
+
+.kasse {
+  display: flex; }
+  .kasse .content {
+    text-align: center;
+    width: 33%; }
+    .kasse .content figure img {
+      border: 2px solid #8c00ff;
+      width: 83%; }
+
+.footer {
+  text-align: center; }
+
+.end {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

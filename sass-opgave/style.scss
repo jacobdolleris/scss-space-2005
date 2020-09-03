@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    margin-left:5px;
+}
+/* ADVARSEL! 2005 SPACE THEME INCOMING */
+$my-font: Helvetica, sans-serif;
+$my-text-color: white;
+$my-color: rgb(53, 53, 53);
+$my-width: 33%;
+$sp-color: rgb(140, 0, 255);
+$my-border: 2px solid $sp-color;
+$center: center;
+
+body{
+    background-image: url(images/baggrund.jpg);
+    background-size: cover;
+}
+//text
+h1{
+    font-family: $my-font;
+    color: $my-text-color;
+    margin-bottom: 20px;
+    
+}
+h2 {
+    @extend h1;
+}
+h3{
+    @extend h1;
+    text-align: $center;
+
+}
+
+h4{
+    @extend h1;
+}
+
+p{
+    @extend h1;
+}
+
+
+//menu
+.menu{
+    list-style: none;
+    margin-top:20px;
+    margin-bottom: 40px;
+    li{
+        display: inline;
+        a{
+            font-family:$my-font;
+            text-decoration:none;
+            color:$my-text-color;
+            margin-right: 15px;
+           
+            //For at style på hover skal man gøre dette:
+            &:hover{
+                color:darken($my-text-color, 50%)
+            }
+        }
+    }
+}
+
+.aktiv{
+   
+    font-style: italic;
+    
+}
+.kasse{
+    display: flex;
+    
+    .content{
+
+    
+    
+    text-align: $center;
+    @extend h1;
+    width: $my-width;
+    figure{
+        
+        img{
+        border: $my-border;
+        width: $my-width + 50%;
+    }
+}
+}}
+
+.footer{
+    @extend .menu;
+    text-align: $center;
+}
+.end{
+    text-align: $center;
+}
